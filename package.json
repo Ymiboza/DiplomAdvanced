@@ -1,5 +1,6 @@
 {
     "scripts": {
+      "install": "npm install --prefix js-advanced-diploma-client",
       "start": "node start.js"
     }
   }

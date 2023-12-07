@@ -1,5 +1,23 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "start.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "js-advanced-diploma-client/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "start.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "js-advanced-diploma-client/$1"
+    }
   ]
 }
