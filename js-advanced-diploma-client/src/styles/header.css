@@ -1,0 +1,155 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-top: 0px;
+  background-color: var(--primary);
+}
+
+.headerTitle {
+  color: var(--white);
+  margin-left: 50px;
+  font-family: "Work Sans";
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.headerButton {
+  height: 52px;
+  padding: 14px 24px;
+  border-radius: 7px;
+  border: 2px solid var(--primary);
+  background: var(--white);
+  color: var(--primary);
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.headerButton:not(:last-child) {
+  margin-right: 25px;
+}
+
+.headerButton:last-child {
+  margin-right: 50px;
+}
+
+.headerButton:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    ),
+    var(--primary);
+}
+
+.headerButton:active {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    ),
+    var(--primary);
+}
+
+.headerButton:disabled {
+  border: 1px solid var(--gray-colors-gray-5, #9ca3af);
+  opacity: 0.5;
+  background: var(--gray-colors-white, #fff);
+  cursor: not-allowed;
+}
+
+.headerBurgerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+.headerBurgerIcon {
+  cursor: pointer;
+  display: none;
+}
+
+.headerBurgerBar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 800px) {
+  .headerContainer {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .headerBurgerIcon {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerButtonsContainer {
+    display: none;
+  }
+
+  .headerButtonsContainer.show {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    margin-top: 463px;
+    z-index: 50;
+    box-shadow: 1px 5px -5px var(--black);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 7px;
+  }
+
+  .headerButton {
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .headerButton:first-child {
+    margin-top: 30px;
+  }
+
+  .headerBurgerClose {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .headerBurgerClose svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 405px) {
+  .headerTitle {
+    color: var(--white);
+    margin-left: 15px;
+    font-family: "Work Sans";
+    font-size: 48px;
+    font-weight: 300;
+  }
+
+  .headerBurgerContainer {
+    margin-right: 15px;
+  }
+}

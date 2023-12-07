@@ -1,0 +1,301 @@
+.accountsContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.accountsHeadContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invoicedHeadBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accountsTitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  margin-right: 35px;
+}
+
+.accountsDropdown {
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid var(--secondary1);
+  padding: 8px 16px;
+  color: var(--gray2);
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+
+.accountsDropdown option {
+  margin-bottom: 20px;
+}
+
+.accountsDropdown:focus {
+  border: 1px solid var(--primary);
+}
+
+.accountsDropdown:hover {
+  border: 1px solid var(--primary);
+}
+
+.accountsDropdown:active {
+  border: 1px solid var(--primary);
+}
+
+.accountsDropdown:focus-visible {
+  border: 1px solid var(--primary);
+  outline: none;
+}
+
+.accountsButtonNew {
+  display: flex;
+  padding: 14px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  background: var(--primary);
+  border: none;
+  color: var(--white);
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.14px;
+  outline: none;
+}
+
+.accountsButtonNew:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.accountsButtonNew:active {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.accountsButtonNew:disabled {
+  background-color: var(--gray5);
+}
+
+.accountsCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accountsCard {
+  width: 400px;
+  padding: 22px;
+  border-radius: 9px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 50px;
+  margin-right: 70px;
+}
+
+.accountsCardTitleBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.accountsCardTitle {
+  color: var(--secondary-1);
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.18px;
+  z-index: 1;
+}
+
+.accountsCardThrashFullIcon {
+  cursor: pointer;
+}
+
+.accountsCardThrashFullIcon:hover svg path {
+  fill: var(--error);
+}
+
+.accountsCardMoney {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.accountsCardTextContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.accountsCardTransaction {
+  font-family: "Work Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+
+.accountsCardDate {
+  font-family: Work Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+
+.accountsCardButton {
+  width: 110px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  background: var(--primary);
+  border: none;
+  color: var(--white);
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.16px;
+}
+
+.accountsCardButton:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.accountsCardButton:active {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.accountsCardButton:disabled {
+  background-color: var(--gray5);
+}
+
+.btn {
+  outline: 1px solid red;
+}
+
+@media (max-width: 1040px) {
+  .accountsCard:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 970px) {
+  .accountsCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .accountsCard {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .accountsCard:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 815px) {
+  .accountsContainer {
+    padding-top: 150px;
+  }
+
+  .accountsButtonNew {
+    position: absolute;
+    top: 220px;
+    left: 50px;
+  }
+
+  .accountsCard:first-child {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  .invoicedHeadBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .accountsButtonNew {
+    top: 210px;
+  }
+
+  .accountsTitle {
+    margin-bottom: 100px;
+  }
+
+  .accountsCard:first-child {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accountsContainer {
+    padding: 15px;
+    padding-top: 150px;
+  }
+
+  .accountsButtonNew {
+    left: 15px;
+  }
+}
+
+@media (max-width: 455px) {
+  .accountsCardTitle {
+    font-size: 14px;
+  }
+
+  .accountsCardButton {
+    width: 75px;
+    padding: 8px 5px;
+    font-size: 14px;
+  }
+}
+

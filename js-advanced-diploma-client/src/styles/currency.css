@@ -1,0 +1,506 @@
+.currencyContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.currencyTitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  margin-bottom: 30px;
+}
+
+.currencyContentContainer {
+  display: flex;
+}
+
+.currencyFirstBlock {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 50px;
+}
+
+.currencyYoursBlock,
+.currencyExchangeBlock,
+.currencySecondBlock {
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.currencyYoursBlock {
+  margin-bottom: 45px;
+}
+
+.currencyYoursTitle,
+.currencyExchangeTitle,
+.currencyChangeTitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.currencyYoursContentBlock,
+.currencyChangeBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.currencyYoursElementBlock,
+.currencyChangeElementBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.currencyYoursElementBlock:last-child {
+  margin-bottom: 0px;
+}
+
+.currency,
+.currencyChangeCurrency {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.currencyNumber,
+.currencyChangeNumber {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.currencyDots,
+.currencyChangeDots {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  border-bottom: 1px dashed var(--black);
+}
+
+.currencyExchangeMainBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.currencyExchangeContentBlock {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.currencyExchangeFromBlock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.currencyExchangeSumBlock {
+  display: flex;
+  align-items: center;
+}
+
+.currencyExchangeSpanFrom,
+.currencyExchangeSpanIn,
+.currencyExchangeSumSpan {
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.16px;
+}
+
+.currencyExchangeSpanFrom,
+.currencyExchangeSpanIn {
+  margin-right: 20px;
+}
+
+.currencyExchangeSumSpan {
+  margin-right: 10px;
+}
+
+.currencyExchangeDropdownFrom,
+.currencyExchangeDropdownIn {
+  display: flex;
+  width: 134px;
+  height: 44px;
+  padding: 8px 16px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  border: 1px solid var(--gray5);
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+.currencyExchangeDropdownFrom {
+  margin-right: 20px;
+}
+
+.currencyExchangeDropdownFrom option,
+.currencyExchangeDropdownIn option {
+  margin-bottom: 20px;
+}
+
+.currencyExchangeDropdownFrom:focus,
+.currencyExchangeDropdownIn:focus {
+  border: 1px solid var(--primary);
+}
+
+.currencyExchangeDropdownFrom:hover,
+.currencyExchangeDropdownIn:hover {
+  border: 1px solid var(--primary);
+}
+
+.currencyExchangeDropdownFrom:active,
+.currencyExchangeDropdownIn:active {
+  border: 1px solid var(--primary);
+}
+
+.currencyExchangeDropdownFrom:focus-visible,
+.currencyExchangeDropdownIn:focus-visible {
+  border: 1px solid var(--primary);
+  outline: none;
+}
+
+.currencyExchangeSumInput {
+  display: flex;
+  width: 300px;
+  height: 44px;
+  padding: 8px 16px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  border: 1px solid var(--gray5);
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+
+.currencyExchangeSumInput:focus {
+  border: 1px solid var(--primary);
+}
+
+.currencyExchangeSumInput:hover {
+  border: 1px solid var(--primary);
+}
+
+.currencyExchangeSumInput:active {
+  border: 1px solid var(--primary);
+}
+
+.currencyExchangeSumInput:focus-visible {
+  border: 1px solid var(--primary);
+  outline: none;
+}
+
+.currencyExchangeButton {
+  display: inline-flex;
+  height: 113px;
+  padding: 0px 13px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--white);
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+  background-color: var(--primary);
+  border: none;
+  margin-right: 50px;
+  border-radius: 7px;
+  background: var(--primary);
+}
+
+.currencyExchangeButton:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.currencyExchangeButton:active {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.currencyExchangeButton:disabled {
+  background-color: var(--gray5);
+}
+
+.invalid {
+  border: 1px solid var(--error);
+  color: var(--error);
+}
+
+.invalidSpan {
+  color: var(--error);
+}
+
+.valid {
+  border: 1px solid var(--success);
+  color: var(--success);
+}
+
+.validSpan {
+  color: var(--success);
+}
+
+.currencyExchangeSumInputError {
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+  margin-left: 18px;
+}
+
+.currencyExchangeSumInputError svg {
+  margin-right: 8px;
+}
+
+.currencySecondBlock {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: var(--gray6);
+}
+
+.currencyFlex {
+  display: flex;
+  position: relative;
+  top: 25%;
+  left: 3%;
+}
+
+.currencyTimerBlock {
+  width: 300px;
+  animation: blink 0.5s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1225px) {
+  .currencySecondBlock {
+    position: absolute;
+    width: 75%;
+    max-width: 100%;
+  }
+
+  .currencyFirstBlock {
+    margin-top: 1180px;
+    width: 82%;
+    margin-right: 0px;
+  }
+
+  .currencyExchangeBlock {
+    width: 100%;
+  }
+
+  .currencyExchangeButton {
+    margin-left: 20px;
+  }
+
+  .currencyExchangeSumInputError {
+    margin-left: 60px;
+    position: absolute;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .currencyContainer {
+    padding-top: 150px;
+  }
+
+  .currencyChangeTitle {
+    font-size: 19px;
+  }
+
+  .currencyChangeCurrency {
+    font-size: 15px;
+  }
+
+  .currencyChangeNumber {
+    font-size: 15px;
+  }
+
+  .currencySecondBlock {
+    width: 88%;
+  }
+
+  .currencyFirstBlock {
+    margin-top: 1050px;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .currencyExchangeBlock {
+    padding-bottom: 40px;
+  }
+
+  .currencyExchangeButton {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 50px;
+    padding: 30px 30px;
+    height: 0px;
+  }
+
+  .currencyExchangeSumInputError {
+    margin-left: 155px;
+    margin-top: 125px;
+  }
+
+  .currencyYoursTitle {
+    font-size: 19px;
+  }
+
+  .currencyValue {
+    font-size: 15px;
+  }
+
+  .currencyNumber {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 645px) {
+  .headerTitle {
+    margin-left: 15px;
+  }
+
+  .headerBurgerContainer {
+    margin-right: 15px;
+  }
+
+  .currencyContainer {
+    padding: 15px;
+    padding-top: 150px;
+  }
+
+  .currencyFirstBlock {
+    width: 92%;
+    margin-top: 980px;
+  }
+
+  .currencyChangeTitle {
+    font-size: 15px;
+  }
+
+  .currencyChangeCurrency {
+    font-size: 13px;
+  }
+
+  .currencyChangeNumber {
+    font-size: 13px;
+  }
+
+  .currencyYoursTitle {
+    font-size: 15px;
+  }
+
+  .currencyValue {
+    font-size: 13px;
+  }
+
+  .currencyNumber {
+    font-size: 13px;
+  }
+
+  .currencyExchangeSumInput {
+    width: 140px;
+  }
+
+  .currencyExchangeFromBlock {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .currencyExchangeDropdownFrom {
+    margin-bottom: 20px;
+  }
+
+  .currencyExchangeButton {
+    margin-top: 260px;
+  }
+
+  .currencyExchangeSumInputError {
+    margin-top: 155px;
+    margin-left: 0px;
+  }
+
+  .currencyExchangeSumBlock {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .currencyExchangeMainBlock {
+    margin-bottom: 100px;
+  }
+
+  .currencyExchangeBlock {
+    width: 75%;
+  }
+}
+
+@media (max-width: 375px) {
+  .currencyNumber {
+    font-size: 10px;
+  }
+}

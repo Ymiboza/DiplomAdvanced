@@ -1,0 +1,283 @@
+.historyBalanceContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.historyBalanceHeadContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.historyBalanceTitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  margin-bottom: 30px;
+}
+
+.historyBalanceNumber {
+  font-family: "Work Sans", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.68px;
+}
+
+.historyBalanceButtonNew {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  border-radius: 7px;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  outline: none;
+  color: var(--white);
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+  margin-bottom: 33px;
+}
+
+.historyBalanceButtonNew svg {
+  margin-right: 15px;
+}
+
+.historyBalanceButtonNew:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.historyBalanceButtonNew:active {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.historyBalanceButtonNew:disabled {
+  background-color: var(--gray5);
+}
+
+.historyBalanceFrontBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.historyBalanceBalanceBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historyBalanceBalance {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+.historyBalanceBalanceMoney {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-left: 50px;
+}
+
+.historyBalanceContentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+
+.historyBalanceFirstContentBlock {
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+
+.historyBalanceDiagramTitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-left: 50px;
+}
+
+.historyBalanceDiagram {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.historyBalanceSecondContentBlock {
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.historyBalanceAnotherDiagramTitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-left: 50px;
+}
+
+.historyBalanceAnotherDiagram {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.historyBalanceTableTitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-bottom: 25px;
+}
+
+.historyBalanceTable {
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.historyBalanceTableHead {
+  display: table-caption;
+  background-color: var(--primary);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.historyBalanceTableHeadRow {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.historyBalanceTableHeadTh {
+  color: var(--white);
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-right: 45px;
+}
+
+.historyBalanceTableHeadTh:first-child {
+  margin-left: 49px;
+}
+
+.historyBalanceTableBodyRow {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 82, 255, 0.2);
+}
+
+.historyBalanceTableBodyCell {
+  color: var(--gray-2);
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  margin-right: 90px;
+}
+
+.historyBalanceTableBodyCell:first-child {
+  margin-left: 49px;
+}
+
+@media (max-width: 915px) {
+  .historyBalanceNumber {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 800px) {
+  .historyBalanceContainer {
+    padding-top: 150px;
+  }
+
+  .historyBalanceButtonNew {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 735px) {
+  .historyBalanceHeadBlock {
+    margin-bottom: 100px;
+  }
+
+  .historyBalanceFrontBlock {
+    position: absolute;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width:480px){
+  .historyBalanceContainer {
+    padding: 15px;
+    padding-top: 150px;
+  }
+
+.historyBalanceDiagram {
+  margin-left: 10px;
+}
+
+.historyBalanceAnotherDiagram {
+  margin-left: 10px;
+}
+
+.historyBalanceDiagramTitle {
+  margin-left: 10px;
+}
+
+.historyBalanceAnotherDiagramTitle {
+  font-size: 15px;
+}
+}
+
+@media (max-width: 435px) {
+  .historyBalanceNumber {
+    font-size: 18px;
+  }
+
+  .historyBalanceAnotherDiagramTitle {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+}

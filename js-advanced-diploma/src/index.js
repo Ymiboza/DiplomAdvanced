@@ -20,7 +20,7 @@ const port = 3000
 
 const AUTH_DATA = Object.freeze({
 	login: 'developer',
-	password: 'skillbox',
+	password: 'developer',
 	token: 'ZGV2ZWxvcGVyOnNraWxsYm94'
 })
 
@@ -115,6 +115,19 @@ app.post('/create-account', authCheck, (req, res) => {
 	res.end(response(newAccount))
 })
 
+app.delete('/account/:id', authCheck, (req, res) => {
+	const accountId = req.params.id
+	const accountRemove = data.accounts[accountId]
+	if (!accountRemove) {
+		res.end(response(null, 'No such account'))
+		return
+	}
+	delete data.accounts[accountId]
+	writeData(data)
+	console.log("Удаленный аккаунт:", accountId)
+	res.end(response({message: "deleted"}))
+  });
+
 app.post('/transfer-funds', authCheck, (req, res) => {
 	const { from, to, amount: rawAmount } = (req.body || {})
 	const fromAccount = data.accounts[from]
@@ -162,9 +175,7 @@ app.post('/transfer-funds', authCheck, (req, res) => {
 		to: toAccount.account,
 		amount,
 	})
-	
 	writeData(data)
-
 	res.end(response(fromAccount))
 })
 
@@ -273,7 +284,6 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-
 function setExchangeRate(currency1, currency2, rate) {
 	const existingInverseRate = data.exchange[`${currency2}/${currency1}`]
 	if (existingInverseRate) {
@@ -333,5 +343,5 @@ const currencyRateFeedGenerator = setInterval(() => {
 		})
 		writeData(data)
 	}
-}, 1000)
+}, 600)
 currencyRateFeedGenerator.unref()

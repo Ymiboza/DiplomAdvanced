@@ -1,0 +1,45 @@
+.spinner {
+  position: relative;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1s infinite;
+  border: 1px solid var(--gray6);
+  box-shadow: 1px 1px 1px var(--gray6);
+}
+
+.spinner:hover {
+  position: relative;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1s infinite;
+  border: 1px solid var(--gray6);
+  box-shadow: 1px 1px 1px var(--gray6);
+}
+
+.spinner:focus {
+  position: relative;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1s infinite;
+  border: 1px solid var(--gray6);
+  box-shadow: 1px 1px 1px var(--gray6);
+}
+
+.spinner:active {
+  position: relative;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1s infinite;
+  border: 1px solid var(--gray6);
+  box-shadow: 1px 1px 1px var(--gray6);
+}
+
+
+@keyframes loading {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

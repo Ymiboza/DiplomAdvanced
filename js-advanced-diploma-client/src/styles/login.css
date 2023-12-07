@@ -1,0 +1,267 @@
+.loginUserMainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90vh;
+}
+
+.loginUserContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginUserTitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  margin-left: 75px;
+}
+
+.loginUserLoginLabel,
+.loginUserPasswordLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.loginUserLoginLabel {
+  margin-top: 35px;
+}
+
+.loginUserSpanLogin,
+.loginUserSpanPassword {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+  color: var(--secondary1);
+  margin-right: 18px;
+}
+
+.loginUserSpanLogin {
+  margin-left: 10px;
+}
+
+.loginUserLogin,
+.loginUserPassword {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 0;
+  width: 315px;
+  height: 40px;
+  border-radius: 7px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  gap: 10px;
+  padding: 8px 10px 8px 16px;
+}
+
+.loginUserLogin:focus,
+.loginUserPassword:focus {
+  border: 1px solid var(--primary);
+}
+
+.loginUserLogin:hover,
+.loginUserPassword:hover {
+  border: 1px solid var(--primary);
+}
+
+.loginUserLogin:active,
+.loginUserPassword:active {
+  border: 1px solid var(--primary);
+}
+
+.loginUserLogin:focus-visible,
+.loginUserPassword:focus-visible {
+  border: 1px solid var(--primary);
+  outline: none;
+}
+
+.loginUserLogin.invalid,
+.loginUserPassword.invalid {
+  border: 1px solid var(--error);
+}
+
+.loginUserLogin.success,
+.loginUserPassword.success {
+  border: 1px solid var(--success);
+}
+
+.loginUserLogin.warning,
+.loginUserPassword.warning {
+  border: 1px solid var(--warning);
+}
+
+.loginUserButton {
+  display: inline-flex;
+  padding: 14px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  background: var(--primary);
+  color: var(--white);
+  margin-left: 75px;
+}
+
+.loginUserButton:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.loginUserButton:active {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    #116acc;
+}
+
+.loginUserButton:disabled {
+  background-color: var(--gray5);
+  cursor: not-allowed;
+}
+
+.loginErrorMassageLogin,
+.loginErrorMassagePassword {
+  color: var(--error);
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+  margin-left: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginErrorMassageLogin svg,
+.loginErrorMassagePassword svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.invalid {
+  border: 1px solid var(--error);
+  color: var(--error);
+}
+
+.loginErrorMassage {
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  width: 230px;
+  height: 40px;
+  color: var(--white);
+  border-radius: 7px;
+  border-width: 1px;
+  border-style: solid;
+  border: 1px solid var(--error);
+  background-color: var(--error);
+  display: none;
+  transition: 0.4s;
+  padding: 10px;
+  margin-left: 75px;
+  margin-top: 20px;
+  outline: 1px solid red;
+}
+
+.errorSpanLogin {
+  width: 250px;
+}
+
+@media (max-width: 612px) {
+  .loginUserTitle {
+    font-family: "Work Sans", sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+  }
+
+  .loginUserLoginLabel,
+  .loginUserPasswordLabel {
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .loginErrorMassageLogin,
+  .loginErrorMassagePassword {
+    color: var(--error);
+    font-family: "Ubuntu";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.16px;
+    margin-left: 75px;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loginErrorMassageLogin svg,
+  .loginErrorMassagePassword svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 405px) {
+  .loginUserTitle {
+    font-family: "Work Sans", sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .loginUserLogin,
+  .loginUserPassword {
+    width: 200px;
+  }
+
+  .loginErrorMassageLogin svg,
+  .loginErrorMassagePassword svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  .loginErrorMassage {
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    width: 200px;
+    height: 40px;
+    color: var(--white);
+    border-radius: 7px;
+    border-width: 1px;
+    border-style: solid;
+    border: 1px solid var(--error);
+    background-color: var(--error);
+    display: none;
+    transition: 0.4s;
+    padding: 10px;
+    margin-left: 75px;
+    margin-top: 20px;
+    outline: 1px solid red;
+  }
+}
