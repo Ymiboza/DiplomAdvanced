@@ -1,7 +1,14 @@
 {
-    "scripts": {
-      "install": "npm install --prefix js-advanced-diploma-client",
-      "start": "node start.js",
-      "build": "node start.js"
-    }
-  }
+  "name": "js-advanced-diploma",
+  "version": "1.0.0",
+  "description": "Общий запуск через entry файл: \r 1.npm start",
+  "main": "start.js",
+  "scripts": {
+    "install": "npm install --prefix js-advanced-diploma-client",
+    "start": "node start.js",
+    "build": "node start.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

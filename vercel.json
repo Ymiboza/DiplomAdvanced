@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "js-advanced-diploma-client/*",
+      "src": "/js-advanced-diploma-client/(.*)",
       "use": "@vercel/static"
     }
   ],
