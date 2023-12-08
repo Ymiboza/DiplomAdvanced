@@ -9,7 +9,7 @@ export const accountDiagramChart = (labels, dataValues) => {
   canvas.id = "myChart";
   if (historyBalanceId){
     canvas.style.maxWidth = "95%";
-    canvas.style.maxHeight = "100%";
+    canvas.style.maxHeight = "400px";
   }
   const chartScriptUrl = document.createElement("script");
   chartScriptUrl.src = "https://cdn.jsdelivr.net/npm/chart.js";

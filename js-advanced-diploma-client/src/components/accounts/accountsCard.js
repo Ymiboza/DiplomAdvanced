@@ -40,6 +40,8 @@ export const accountsCard = (data, { onAccounts, onDeleteAccount }) => {
   accountsCardTransaction.innerHTML = "Последняя транзакция:";
   accountsCardButton.textContent = "Открыть";
 
+  if (data.account === "74213041477477406320783754")   accountsCardThrashFullIcon.innerHTML = "";
+
   if (data.transactions.length) {
     const transactionDate = new Date(data.transactions[0].date)
       .toLocaleString("ru", {
