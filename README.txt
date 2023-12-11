@@ -12,3 +12,6 @@
 Запуск тестов: 
 1. cd js-advanced-diploma-client
 2. npm test
+
+Login - developer
+Password - developer
